@@ -7,6 +7,9 @@ TITANX:
 TITANXX:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/TITANX-pascal/gpgpusim.config"
 
+TX2:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM6_TX2/gpgpusim.config"
+
 #Kepler
 TITANK:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM3_KEPLER_TITAN/gpgpusim.config"
@@ -14,6 +17,12 @@ TITANK:
 #Ampere RTX 3070
 RTX3070:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_RTX3070/gpgpusim.config"
+
+ORIN:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN/gpgpusim.config"
+
+TEST_CFG:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/TEST_CFG/gpgpusim.config"
 
 #Turing
 RTX2060:

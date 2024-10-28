@@ -14,6 +14,9 @@ rodinia_2.0-ft:
     exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
     data_dirs: "$GPUAPPS_ROOT/data_dirs/cuda/rodinia/2.0-ft/"
     execs:
+        - vecadd-rodinia-2.0-ft:
+            - args: 
+              accel-sim-mem: 1G
         - backprop-rodinia-2.0-ft:
             - args:  4096 ./data/result-4096.txt
               accel-sim-mem: 1G

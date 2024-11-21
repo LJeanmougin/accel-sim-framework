@@ -1,13 +1,15 @@
 readarray KernelNames < <(grep kernel_name ./sim_run_11.0/$1*/*/TEST_CFG/*.o*)
 readarray GpuSimCycles < <(grep gpu_sim_cycle ./sim_run_11.0/$1*/*/TEST_CFG/*.o*)
 readarray GpuSimInsn < <(grep gpu_sim_insn ./sim_run_11.0/$1*/*/TEST_CFG/*.o*)
+readarray IdleTimes < <(grep W0_Idle ./sim_run_11.0/$1*/*/TEST_CFG/*.o*)
 index=0
 echo "################### Bench Results ###################"
 for name in "${KernelNames[@]}"
 do
     echo -n "|| ${KernelNames[index]}"
     echo -n "|| ${GpuSimCycles[index]}"
-    echo "|| ${GpuSimInsn[index]}"
+    echo -n "|| ${GpuSimInsn[index]}"
+    # echo "|| ${IdleTimes[index]}"
     index=$index+1
 done
 echo "#####################################################"

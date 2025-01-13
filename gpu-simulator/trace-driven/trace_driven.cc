@@ -138,6 +138,8 @@ types_of_operands get_oprnd_type(op_type op, special_ops sp_op){
     case INTP_OP:
     case SPECIALIZED_UNIT_4_OP:
       return INT_OP;
+    // L.Jeanmougin : Changing ALU_OP target here doesn't change
+    // anything for performance simulation
     case ALU_OP:
       if ((sp_op == FP__OP) || (sp_op == TEX__OP) || (sp_op == OTHER_OP))
         return FP_OP;

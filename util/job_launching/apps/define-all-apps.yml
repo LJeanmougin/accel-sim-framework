@@ -14,10 +14,7 @@ ecrts_2025:
   exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
   data_dirs: "$GPUAPPS_ROOT/data_dirs/cuda/rodinia/2.0-ft"
   execs:
-    - vecadd:
-      - args:
-        accel-sim-mem: 6G
-    - sgemm_naive:
+    - sgemm:
       - args:
         accel-sim-mem: 1G
 

@@ -426,32 +426,32 @@ rodinia-3.1_1w:
     exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
     data_dirs: "$GPUAPPS_ROOT/data_dirs/cuda/rodinia/3.1/"
     execs:
-        - b+tree-rodinia-3.1:
+        - b+tree-rodinia-3.1_1w:
             - args:  file ./data/mil.txt command ./data/command.txt
               accel-sim-mem: 1G
-        - backprop-rodinia-3.1:
+        - backprop-rodinia-3.1_1w:
             - args:  65536
               accel-sim-mem: 1G
-        - bfs-rodinia-3.1:
+        - bfs-rodinia-3.1_1w:
             - args:  ./data/graph4096.txt
               accel-sim-mem: 1G
             - args:  ./data/graph65536.txt
               accel-sim-mem: 1G
             - args:  ./data/graph1MW_6.txt
               accel-sim-mem: 1G
-#        - cfd-rodinia-3.1:
+#        - cfd-rodinia-3.1_1w:
 #            - args:  ./data/fvcorr.domn.097K
               accel-sim-mem: 1G
 #            - args:  ./data/fvcorr.domn.193K
               accel-sim-mem: 1G
 #            - args:  ./data/missile.domn.0.2M
               accel-sim-mem: 4G
-        - dwt2d-rodinia-3.1:
+        - dwt2d-rodinia-3.1_1w:
             - args:  ./data/192.bmp -d 192x192 -f -5 -l 3
               accel-sim-mem: 1G
             - args:  ./data/rgb.bmp -d 1024x1024 -f -5 -l 3
               accel-sim-mem: 1G
-        - gaussian-rodinia-3.1:
+        - gaussian-rodinia-3.1_1w:
             - args:  -f ./data/matrix4.txt
               accel-sim-mem: 1G
             - args:  -s 16
@@ -462,64 +462,64 @@ rodinia-3.1_1w:
               accel-sim-mem: 1G
             - args:  -s 256
               accel-sim-mem: 1G
-#        - heartwall-rodinia-3.1:
+#        - heartwall-rodinia-3.1_1w:
 #            - args:  ./data/test.avi 1
 #            - args:  ./data/test.avi 20
-        - hotspot-rodinia-3.1:
+        - hotspot-rodinia-3.1_1w:
             - args:  512 2 2 ./data/temp_512 ./data/power_512 output.out
               accel-sim-mem: 1G
             - args:  1024 2 2 ./data/temp_1024 ./data/power_1024 output.out
               accel-sim-mem: 1G
-#        - hotspot3D-rodinia-3.1:
+#        - hotspot3D-rodinia-3.1_1w:
 #            - args:  512 8 100 ./data/power_512x8 ./data/temp_512x8 output.out
 #              accel-sim-mem: 4G
         # Only works with newer versions of CUDA
-#        - huffman-rodinia-3.1:
+#        - huffman-rodinia-3.1_1w:
 #            - args:  ./data/huffman/test1024_H2.206587175259.in
-        - hybridsort-rodinia-3.1:
+        - hybridsort-rodinia-3.1_1w:
             - args:  r
               accel-sim-mem: 5G
             - args:  ./data/500000.txt
               accel-sim-mem: 1G
         # Uses legacy texture cache instructions, it is unclear if it still makes sense to support
-        - kmeans-rodinia-3.1:
+        - kmeans-rodinia-3.1_1w:
             - args:  -o -i ./data/28k_4x_features.txt
               accel-sim-mem: 1G
             - args:  -o -i ./data/kdd_cup
               accel-sim-mem: 2G
             - args:  -o -i ./data/819200.txt
               accel-sim-mem: 2G
-        - lavaMD-rodinia-3.1:
+        - lavaMD-rodinia-3.1_1w:
             - args:  -boxes1d 10
               accel-sim-mem: 32G
-#        - leukocyte-rodinia-3.1:
+#        - leukocyte-rodinia-3.1_1w:
 #            - args:  ./data/testfile.avi 5
-        - lud-rodinia-3.1:
+        - lud-rodinia-3.1_1w:
             - args:  -s 256 -v
               accel-sim-mem: 1G
             - args:  -i ./data/512.dat
               accel-sim-mem: 1G
-#        - mummergpu-rodinia-3.1:
+#        - mummergpu-rodinia-3.1_1w:
 #            - args:  ./data/NC_003997.fna ./data/NC_003997_q100bp.fna > NC_00399.out
-        - myocyte-rodinia-3.1:
+        - myocyte-rodinia-3.1_1w:
             - args:  100 1 0
               accel-sim-mem: 4G
-        - nn-rodinia-3.1:
+        - nn-rodinia-3.1_1w:
             - args:  ./data/filelist_4 -r 5 -lat 30 -lng 90
               accel-sim-mem: 4G
-        - nw-rodinia-3.1:
+        - nw-rodinia-3.1_1w:
             - args:  2048 10
               accel-sim-mem: 1G
-        - particlefilter_float-rodinia-3.1:
+        - particlefilter_float-rodinia-3.1_1w:
             - args:  -x 128 -y 128 -z 10 -np 1000
               accel-sim-mem: 1G
-        - particlefilter_naive-rodinia-3.1:
+        - particlefilter_naive-rodinia-3.1_1w:
             - args:  -x 128 -y 128 -z 10 -np 1000
               accel-sim-mem: 1G
-        - pathfinder-rodinia-3.1:
+        - pathfinder-rodinia-3.1_1w:
             - args:  100000 100 20 > result.txt
               accel-sim-mem: 1G
-        - srad_v1-rodinia-3.1:
+        - srad_v1-rodinia-3.1_1w:
             - args:  100 0.5 502 458
               accel-sim-mem: 1G
 #        - srad_v2-rodinia-3.1:

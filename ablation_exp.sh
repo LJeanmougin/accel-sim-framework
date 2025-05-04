@@ -9,11 +9,14 @@ export CUDA_INSTALL_PATH=/usr/local/cuda-11.0/
 export PATH=$CUDA_INSTALL_PATH/bin:$PATH
 git clone https://github.com/LJeanmougin/gpu-app-collection.git
 cd gpu-app-collection
-git checkout ECRTS_2025
+git checkout ablation_study
 cd ..
 source ./gpu-app-collection/src/setup_environment
 make -C ./gpu-app-collection/src data
 pip3 install -r requirements.txt
+cd ./gpu-simulator/gpgpu-sim
+git checkout ablation_study
+cd ../..
 source ./gpu-simulator/setup_environment.sh
 make -j -C ./gpu-simulator/
 make -j -C ./gpu-app-collection/src rodinia-3.1

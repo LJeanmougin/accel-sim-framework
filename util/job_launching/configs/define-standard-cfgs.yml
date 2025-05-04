@@ -46,6 +46,23 @@ ORIN_400l:
 ORIN_800l:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_800l/gpgpusim.config"
 
+# ablation study configs
+ORIN_baseline:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_baseline/gpgpusim.config"
+
+ORIN_perf_inst:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_perf_inst/gpgpusim.config"
+
+ORIN_single_core:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_single_core/gpgpusim.config"
+
+ORIN_single_issue:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_single_issue/gpgpusim.config"
+
+ORIN_no_cache:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_no_cache/gpgpusim.config"
+    
+
 # L.Jeanmougin : End of specific configs    
 
 TEST_CFG:

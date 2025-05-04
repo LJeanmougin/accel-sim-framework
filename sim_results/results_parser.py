@@ -195,22 +195,22 @@ def compare_configs(results : dict, config1 : str, config2 : str):
         min_diff = min(min_diff, diff)
         time_diff.append(diff)
         # cache_miss_rates.append(results[kernel][config1]["cache_miss"]/results[kernel][config1]["cache_access"])
-        if (config2 != "1core_no_cache" and
-            results[kernel][config1]["cache_miss"] > 0 and 
-            results[kernel][config2]["cache_miss"] > 0):
-            miss_count_comparison.append(results[kernel][config1]["cache_miss"]/results[kernel][config2]["cache_miss"])
-        # if diff > 1:
-        cache_miss_rates.append(results[kernel][config1]["cache_miss"]/results[kernel][config1]["cache_access"])
+        # if (config2 != "1core_no_cache" and
+        #     results[kernel][config1]["cache_miss"] > 0 and 
+        #     results[kernel][config2]["cache_miss"] > 0):
+        #     miss_count_comparison.append(results[kernel][config1]["cache_miss"]/results[kernel][config2]["cache_miss"])
+        # # if diff > 1:
+        # cache_miss_rates.append(results[kernel][config1]["cache_miss"]/results[kernel][config1]["cache_access"])
     print(f"Mean : {np.mean(time_diff)}")
-    print(f"Max : {max_diff} ({max_kernel})")
-    print(f"Min : {min_diff} ({min_kernel})")
     print(f"std. dev. : {np.std(time_diff)}")
-    print(f"Mean cache miss rate when above 100% : {np.mean(cache_miss_rates)}")
-    print(f"std dev miss rate : {np.std(cache_miss_rates)}")
-    if miss_count_comparison != []:
-        print(f"Mean cache miss comparison : {np.mean(miss_count_comparison)}")
-        print(f"Max cache miss comparison : {max(miss_count_comparison)}")
-        print(f"Min cache miss comparison : {min(miss_count_comparison)}")
+    print(f"Min : {min_diff} ({min_kernel})")
+    print(f"Max : {max_diff} ({max_kernel})")
+    # print(f"Mean cache miss rate when above 100% : {np.mean(cache_miss_rates)}")
+    # print(f"std dev miss rate : {np.std(cache_miss_rates)}")
+    # if miss_count_comparison != []:
+    #     print(f"Mean cache miss comparison : {np.mean(miss_count_comparison)}")
+    #     print(f"Max cache miss comparison : {max(miss_count_comparison)}")
+    #     print(f"Min cache miss comparison : {min(miss_count_comparison)}")
     print("\n")
 
 def get_above_percent(results : dict, config1 : str, config2 : str, threshold : int) -> int:
@@ -234,13 +234,13 @@ if __name__ == "__main__":
     # get_above_percent(results, "baseline", "1core_dual", 90)
     # get_above_percent(results, "baseline", "1core_dual", 100)
     compare_configs(results, "baseline", "baseline_perf_inst")
-    get_above_percent(results, "baseline", "baseline_perf_inst", 160)
-    # compare_configs(results, "baseline_perf_inst", "1core_dual")
+    # get_above_percent(results, "baseline", "baseline_perf_inst", 160)
+    compare_configs(results, "baseline_perf_inst", "1core_dual")
     # get_above_percent(results, "1core_dual", "1core_single", 100)
-    # compare_configs(results, "1core_dual", '1core_single')
+    compare_configs(results, "1core_dual", '1core_single')
     # get_above_percent(results, "1core_single", "1core_no_cache", 100)
-    # compare_configs(results, "1core_single", "1core_no_cache")
-    # compare_configs(results, "1core_no_cache", "sim_rodinia_lrr_1b_200l")
+    compare_configs(results, "1core_single", "1core_no_cache")
+    compare_configs(results, "1core_no_cache", "ecrts_1b_200l_lrr")
     # compare_configs(results, "1core_full_coal", "1core_single")
     
      

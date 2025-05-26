@@ -446,9 +446,10 @@ rodinia-3.1:
         - pathfinder-rodinia-3.1:
             - args:  100000 100 20 > result.txt
               accel-sim-mem: 1G
-        - srad_v1-rodinia-3.1:
-            - args:  100 0.5 502 458
-              accel-sim-mem: 1G
+        # srad is too big for reproducibility
+        # - srad_v1-rodinia-3.1:
+        #     - args:  100 0.5 502 458
+        #       accel-sim-mem: 1G
 #        - srad_v2-rodinia-3.1:
 #            - args:  2048 2048 0 127 0 127 0.5 2
 #        - streamcluster-rodinia-3.1:
@@ -552,9 +553,10 @@ rodinia-3.1_1w:
         - pathfinder-rodinia-3.1_1w:
             - args:  100000 100 20 > result.txt
               accel-sim-mem: 1G
-        - srad_v1-rodinia-3.1_1w:
-            - args:  100 0.5 502 458
-              accel-sim-mem: 1G
+        # srad is too big for reproducibility
+        # - srad_v1-rodinia-3.1_1w:
+        #     - args:  100 0.5 502 458
+        #       accel-sim-mem: 1G
 #        - srad_v2-rodinia-3.1:
 #            - args:  2048 2048 0 127 0 127 0.5 2
 #        - streamcluster-rodinia-3.1:

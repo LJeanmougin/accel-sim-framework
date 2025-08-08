@@ -7,7 +7,7 @@ pip3 install pyyaml plotly psutil parsy
 sh cuda_11.0.1_450.36.06_linux.run --silent --toolkit
 export CUDA_INSTALL_PATH=/usr/local/cuda-11.0/
 export PATH=$CUDA_INSTALL_PATH/bin:$PATH
-git clone https://github.com/LJeanmougin/gpu-app-collection.git
+git clone git@github.com:LJeanmougin/gpu-app-collection.git
 cd gpu-app-collection
 git checkout ECRTS_2025
 cd ..

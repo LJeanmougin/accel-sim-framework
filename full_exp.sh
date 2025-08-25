@@ -2,11 +2,11 @@ export CUDA_INSTALL_PATH=/usr/local/cuda-11.0/
 export PATH=$CUDA_INSTALL_PATH/bin:$PATH
 source ./gpu-app-collection/src/setup_environment
 source ./gpu-simulator/setup_environment.sh
-make -j -C ./gpu-app-collection/src rodinia-3.1
+make -j -C ./gpu-app-collection/src rodinia-3.1_1w
 make -j -C ./gpu-simulator/
 # ./util/job_launching/run_simulations.py -B rodinia-3.1 -C ORIN_5l-PTX -N rodinia-3.1 -l local -r ecrts_1b_5l
 # ./util/job_launching/run_simulations.py -B rodinia-3.1 -C ORIN_10l-PTX -N rodinia-3.1 -l local -r ecrts_1b_10l
-./util/job_launching/run_simulations.py -B rodinia-3.1 -C ORIN_5l-PTX -N rodinia-3.1 -l local -r rodinia_1b_5l_lrr
+./util/job_launching/run_simulations.py -B rodinia-3.1_1w -C ORIN_5l-PTX -N rodinia-3.1_1w -l local -r rodinia_1w_5l
 # ./util/job_launching/run_simulations.py -B rodinia-3.1 -C ORIN_50l-PTX -N rodinia-3.1 -l local -r ecrts_1b_50l
 # ./util/job_launching/run_simulations.py -B rodinia-3.1 -C ORIN_100l-PTX -N rodinia-3.1 -l local -r ecrts_1b_100l
 # ./util/job_launching/run_simulations.py -B rodinia-3.1 -C ORIN_200l-PTX -N rodinia-3.1 -l local -r ecrts_1b_200l

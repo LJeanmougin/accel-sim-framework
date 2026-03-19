@@ -417,9 +417,9 @@ rodinia-3.1:
         #       accel-sim-mem: 1G
         # - srad_v2-rodinia-3.1:
         #     - args:  2048 2048 0 127 0 127 0.5 2
-        - streamcluster-rodinia-3.1:
-            - args:  3 6 16 65536 65536 1000 none output.txt 1 output.txt
-            - args:  10 20 256 65536 65536 1000 none output.txt 1
+        # - streamcluster-rodinia-3.1:
+        #     - args:  3 6 16 65536 65536 1000 none output.txt 1 output.txt
+        #     - args:  10 20 256 65536 65536 1000 none output.txt 1
 
 
 rodinia-3.1_1w:
@@ -524,9 +524,9 @@ rodinia-3.1_1w:
         #       accel-sim-mem: 1G
         # - srad_v2-rodinia-3.1_1w:
         #     - args:  2048 2048 0 127 0 127 0.5 2
-        - streamcluster-rodinia-3.1_1w:
-            - args:  3 6 16 65536 65536 1000 none output.txt 1 output.txt
-            - args:  10 20 256 65536 65536 1000 none output.txt 1
+        # - streamcluster-rodinia-3.1_1w:
+        #     - args:  3 6 16 65536 65536 1000 none output.txt 1 output.txt
+        #     - args:  10 20 256 65536 65536 1000 none output.txt 1
 
 
 

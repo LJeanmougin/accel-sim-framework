@@ -21,30 +21,54 @@ RTX3070:
 ORIN:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN/gpgpusim.config"
 
-# L.Jeanmougin : Specific configs for ECRTS 2025 experiments
-ORIN_5l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_5l/gpgpusim.config"
+# L.Jeanmougin : Specific configs for EMSOFT 2026 experiments
 
-ORIN_10l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_10l/gpgpusim.config"
+# LRR CONFIGS
 
-ORIN_25l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_25l/gpgpusim.config"
+ORIN_5l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_5l_lrr/gpgpusim.config"
 
-ORIN_50l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_50l/gpgpusim.config"
+ORIN_10l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_10l_lrr/gpgpusim.config"
 
-ORIN_100l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_100l/gpgpusim.config"
+ORIN_25l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_25l_lrr/gpgpusim.config"
 
-ORIN_200l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_200l/gpgpusim.config"
+ORIN_50l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_50l_lrr/gpgpusim.config"
 
-ORIN_400l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_400l/gpgpusim.config"
+ORIN_100l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_100l_lrr/gpgpusim.config"
 
-ORIN_800l:
-    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_800l/gpgpusim.config"
+ORIN_200l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_200l_lrr/gpgpusim.config"
+
+ORIN_400l_lrr:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_400l_lrr/gpgpusim.config"
+
+#GTO CONFIGS
+
+ORIN_5l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_5l_gto/gpgpusim.config"
+
+ORIN_10l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_10l_gto/gpgpusim.config"
+
+ORIN_25l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_25l_gto/gpgpusim.config"
+
+ORIN_50l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_50l_gto/gpgpusim.config"
+
+ORIN_100l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_100l_gto/gpgpusim.config"
+
+ORIN_200l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_200l_gto/gpgpusim.config"
+
+ORIN_400l_gto:
+    base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM86_ORIN_400l_gto/gpgpusim.config"
+
 
 # L.Jeanmougin : End of specific configs    
 
